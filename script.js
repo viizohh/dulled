@@ -3,7 +3,7 @@ const contactOverlay = document.getElementById('contact');
 const insidePagesOverlay = document.getElementById('insidePages');
 const purposeOverlay = document.getElementById('purpose');
 const mainImage = document.querySelector('.main-image');
-const mainContainer = document.querySelector('.main-container');
+const imageWrapper = document.querySelector('.image-wrapper');
 
 // Track state
 let isViewingInsidePage = false;
@@ -46,12 +46,13 @@ function showPurpose(event) {
 }
 
 // Return to home screen
-function returnToHome() {
-    if (isViewingInsidePage) {
+function returnToHome(event) {
+    // Only return home if clicking on the image itself, not the studs
+    if (isViewingInsidePage && event.target === mainImage) {
         mainImage.src = 'Copy of Untitled (1).png';
         isViewingInsidePage = false;
     }
 }
 
-// Add click handler to entire page
-mainContainer.addEventListener('click', returnToHome);
+// Add click handler to image wrapper
+imageWrapper.addEventListener('click', returnToHome);
