@@ -149,6 +149,10 @@ body {
     top: 50px;
     right: 50px;
     font-size: 18px;
+    background-color: rgba(245, 245, 245, 0.95);
+    padding: 12px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-overlay a {
