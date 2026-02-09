@@ -7,25 +7,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Scrolling text for top white space -->
-    <div class="scrolling-text scrolling-text-top">
-        <div class="scroll-content">dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books</div>
-    </div>
-
-    <div class="main-container">
-        <div class="image-wrapper">
-            <img src="Copy of Untitled (1).png" alt="Dulled" class="main-image">
-
-            <!-- Clickable stud areas -->
-            <div class="stud stud-left" onclick="showContact(event)"></div>
-            <div class="stud stud-center" onclick="showInsidePages(event)"></div>
-            <div class="stud stud-right" onclick="showPurpose(event)"></div>
+    <div class="page-layout">
+        <!-- Top marquee zone -->
+        <div class="marquee-zone marquee-top">
+            <div class="scroll-content">dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books</div>
         </div>
-    </div>
 
-    <!-- Scrolling text for bottom white space -->
-    <div class="scrolling-text scrolling-text-bottom">
-        <div class="scroll-content">dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books</div>
+        <!-- Image zone -->
+        <div class="image-zone">
+            <div class="image-wrapper">
+                <img src="Copy of Untitled (1).png" alt="Dulled" class="main-image">
+
+                <!-- Clickable stud areas -->
+                <div class="stud stud-left" onclick="showContact(event)"></div>
+                <div class="stud stud-center" onclick="showInsidePages(event)"></div>
+                <div class="stud stud-right" onclick="showPurpose(event)"></div>
+            </div>
+        </div>
+
+        <!-- Bottom marquee zone -->
+        <div class="marquee-zone marquee-bottom">
+            <div class="scroll-content">dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books dull books</div>
+        </div>
     </div>
 
     <!-- Contact overlay -->
