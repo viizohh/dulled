@@ -22,6 +22,17 @@
                 <div class="stud stud-left" onclick="showContact(event)"></div>
                 <div class="stud stud-center" onclick="showInsidePages(event)"></div>
                 <div class="stud stud-right" onclick="showPurpose(event)"></div>
+
+                <!-- Contact overlay - anchored to image -->
+                <div id="contact" class="overlay contact-overlay">
+                    <a href="mailto:lei@dulled.org">lei@dulled.org</a>
+                </div>
+
+                <!-- Purpose overlay - anchored to image -->
+                <div id="purpose" class="overlay purpose-overlay">
+                    <p>dull, is a book project with the goal of giving books at cost and or free to the end consumer with the highest quality possible, the inner paper is 100-80# accent paper slightly lighter than sketchbook paper but much heavier than regular notebook paper, and the books are 12" x 11". We are able to charge so little because of the community we build with the ads found on the back cover and, backside of our front cover. These ads together as well are not overcharged either, we charge each company just enough for us to break even too. The point of this project is not to make money but to encourage creativity and give users a product they can not only use but enjoy and keep.</p>
+                    <p>If you would like to contact me for ad spot availability please click the leftmost stud to find my contact email.</p>
+                </div>
             </div>
         </div>
 
@@ -31,20 +42,9 @@
         </div>
     </div>
 
-    <!-- Contact overlay -->
-    <div id="contact" class="overlay contact-overlay">
-        <a href="mailto:lei@dulled.org">lei@dulled.org</a>
-    </div>
-
-    <!-- Inside pages overlay -->
+    <!-- Inside pages overlay - stays viewport-fixed for full-screen modal -->
     <div id="insidePages" class="overlay inside-pages-overlay">
         <p>Inside pages content coming soon...</p>
-    </div>
-
-    <!-- Purpose overlay -->
-    <div id="purpose" class="overlay purpose-overlay">
-        <p>dull, is a book project with the goal of giving books at cost and or free to the end consumer with the highest quality possible, the inner paper is 100-80# accent paper slightly lighter than sketchbook paper but much heavier than regular notebook paper, and the books are 12" x 11". We are able to charge so little because of the community we build with the ads found on the back cover and, backside of our front cover. These ads together as well are not overcharged either, we charge each company just enough for us to break even too. The point of this project is not to make money but to encourage creativity and give users a product they can not only use but enjoy and keep.</p>
-        <p>If you would like to contact me for ad spot availability please click the leftmost stud to find my contact email.</p>
     </div>
 
     <script src="script.js"></script>
